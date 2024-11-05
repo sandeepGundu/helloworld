@@ -18,6 +18,7 @@ pipeline {
         stage('Test2') {
           steps {
             echo 'hello'
+            echo 'Running API Test'
           }
         }
 
