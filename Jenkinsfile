@@ -8,19 +8,8 @@ pipeline {
     }
 
     stage('Test') {
-      parallel {
-        stage('Test') {
-          steps {
-            echo 'Echo \'Testing\''
-          }
-        }
-
-        stage('Test2') {
-          steps {
-            echo 'hello'
-          }
-        }
-
+      steps {
+        echo 'Echo \'Testing\''
       }
     }
 
